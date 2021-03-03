@@ -5,7 +5,7 @@ import Header from '../components/header';
 const themeScript = `
   var themes = ['cyber-yellow', 'wisteria', 'yale-blue', 'cadet-blue-crayola', 'blaze-orange', 'light-salmon', 'viridian-green'];
   var randomTheme = themes[Math.floor(Math.random() * themes.length)];
-  document.querySelector('body').dataset.theme = randomTheme;
+  document.documentElement.dataset.theme = randomTheme;
 `;
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap"
           rel="stylesheet"
         />
-        <script>{themeScript}</script>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </Head>
       <Header />
     </main>
