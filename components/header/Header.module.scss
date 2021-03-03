@@ -1,0 +1,25 @@
+.wrapper {
+  min-height: 100vh;
+  background-color: var(--themed-background, #e3e3e3);
+  color: var(--themed-text, #282828);
+  padding: 15px;
+  display: flex;
+  border: 10px solid #fff;
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+}
+
+.text {
+  // font-family: 'Staatliches', cursive;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 0.8;
+  align-self: flex-end;
+
+  @media (min-width: 768px) {
+    font-size: 150px;
+  }
+}

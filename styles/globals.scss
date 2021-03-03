@@ -1,0 +1,62 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$color-cyber-yellow: #ffd203;
+$color-wisteria: #ba93c7;
+$color-yale-blue: #16487c;
+$color-cadet-blue-crayola: #afb7c0;
+$color-blaze-orange: #ff6c02;
+$color-light-salmon: #f9946f;
+$color-viridian-green: #03958d;
+$color-eerie-black: #282828;
+
+$font-family-display: 'Staatliches', cursive;
+
+[data-theme='cyber-yellow'] {
+  --themed-background: #{$color-cyber-yellow};
+  --themed-text: #{$color-eerie-black};
+}
+
+[data-theme='wisteria'] {
+  --themed-background: #{$color-wisteria};
+  --themed-text: #{$color-eerie-black};
+}
+
+[data-theme='yale-blue'] {
+  --themed-background: #{$color-yale-blue};
+  --themed-text: #{$color-cadet-blue-crayola};
+}
+
+[data-theme='cadet-blue-crayola'] {
+  --themed-background: #{$color-cadet-blue-crayola};
+  --themed-text: #{$color-eerie-black};
+}
+
+[data-theme='blaze-orange'] {
+  --themed-background: #{$color-blaze-orange};
+  --themed-text: #{$color-eerie-black};
+}
+
+[data-theme='light-salmon'] {
+  --themed-background: #{$color-light-salmon};
+  --themed-text: #{$color-eerie-black};
+}
+
+[data-theme='viridian-green'] {
+  --themed-background: #{$color-viridian-green};
+  --themed-text: #{$color-eerie-black};
+}
